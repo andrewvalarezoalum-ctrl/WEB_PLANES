@@ -1,0 +1,14 @@
+En la web tiene que aparecer:
+Planes generales
+Recetas
+Restaurantes a los que ir
+Sitios a los que ir
+Todos estos tienen una etiqueta/categoria, pueden tener más de una.
+En la página inicial, aparece un título y también un buscador, debajo del buscador aparecen las “ideas principales” como las recetas, restaurantes,... para llegar más rápido a ello.
+También tiene que haber la opción de crear un plan nuevo y que cuando se decida en qué apartado estará automáticamente se ponga ahí.
+Idea de automatización → cuando añadimos un nuevo plan se guarde en la base de datos y que la web automáticamente lea la base de datos y muestre todo.
+Calendario:Tener la opcion de poder definir una fecha a un plan.
+
+Complicaciones:
+Que se actualice automáticamente
+(Investigar como hacer nuestro propio servidor/dominio)
