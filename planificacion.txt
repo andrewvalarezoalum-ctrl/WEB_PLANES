@@ -1,23 +1,65 @@
 En la web tiene que aparecer:
-Fotos/galeria
 Actividades
 Recetas
 Restaurantes a los que ir
 Sitios a los que ir
 Fotos
 Calendario
-Todos estos tienen una etiqueta/categoria, pueden tener más de una.
-En la página inicial, aparece un título y también un buscador, debajo del buscador aparecen las “ideas principales” como las para ver todo lo que hay guardado para llegar más rápido a ello.
-También tiene que haber la opción de crear un plan nuevo y que cuando se decida en qué apartado estará automáticamente se ponga ahí.
-En las actividades y otros se mostraran los planes y se vera el nombre y sus etiquetas, al hacer click se despliega y se muestra info extra
-La parte de recetas si tendra su propia paginita.
+
+ - Todos estos tienen una etiqueta/categoria, pueden tener más de una.
+ - En la página inicial, aparece un título y también un buscador, debajo del buscador aparecen las “ideas principales” como las para ver todo lo que hay guardado para llegar más rápido a ello.
+ - También tiene que haber la opción de crear un plan nuevo y que cuando se decida en qué apartado estará automáticamente se ponga ahí.
+ - En las actividades y otros se mostraran los planes y se vera el nombre y sus etiquetas, al hacer click se despliega y se muestra info extra
+ - La parte de recetas si tendra su propia paginita.
+ - Las fotos se giraran al darle click y mostrara información como el sitio el dia y una pequeña nota
+ - Los planes ya hechos y que tengan una foto relacionada se podra enlazar para poder ir/ver hacia la foto
+ - Se puede añadir significado a los colores como que rojo es dias q no se podra quedar, verde a los planes decididos y rosa a los dias que se esta planificando el plan.
+
 
 Actividades:
  - Materiales
  - Precio
  - Tiempo
+ - Enlace a foto/calendario (si esta completado/decidido)
 
+Recetas:
+ - Ingredientes
+ - Tiempo de preparación
+ - Pasos a seguir
+ - Cantidad / pp
+ - País típico
+ - Enlace a foto/calendario (si esta completado/decidido)
 
+Restaurantes:
+ - País típico
+ - Dirección
+ - Precio aproximado pp
+ - Enlace a foto/calendario (si esta completado/decidido)
+
+Sitios:
+ - Tipo de sitio (montaña, tienda, rios/playa/calas,...)
+ - Dirección/coordenadas
+ - Link Google Maps
+ - Distancia
+ - Mejor manera para llegar
+ - Tiempo de desplazamento
+ - Descripción
+ - Enlace a foto/calendario (si esta completado/decidido)
+
+Fotos:
+ - La foto
+ - La fecha
+ - El sitio
+ - Un comentario o una notita
+ - Enlace del plan hecho
+
+Calendario:
+ - Planes completados
+ - Dias ocupados/libres
+ - Dias planeados
+ - Dias con potencial de plan
+ - Enlace directo al plan
+ - Dias importantes (aniversarios, cumples, alguna fiesta o evento especial)
 
 Idea de automatización → cuando añadimos un nuevo plan se guarde en la base de datos y que la web automáticamente lea la base de datos y muestre todo.
 Calendario:Tener la opcion de poder definir una fecha a un plan.
