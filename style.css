@@ -1,13 +1,14 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: aqua;
 }
-
 .Cabezera {
-  display: flexbox;
+  display: flex;
   align-items: center;
   background-color: beige;
   height: 60px;
@@ -15,8 +16,10 @@ body {
 }
 
 .Cabezera a {
+  flex: 1;
   height: 100%;
-  width: 1fr;
-  display: flexbox;
+  display: flex;
   background-color: red;
+ box-sizing: border-box;
+ border: 2px solid white;
 }
