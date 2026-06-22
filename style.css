@@ -24,8 +24,13 @@ body {
   background-color: red;
   box-sizing: border-box;
   border: 2px solid white;
+  border-radius: 5px;
 }
-
+.Cabezera a img{
+height: 30px;
+width: 30px;
+object-fit: cover;
+}
 .Titulo {
   margin-top: 250px;
   display: flex;
