@@ -6,8 +6,12 @@
 
 body {
   background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.Cabezera {
+
+.cabecera {
   display: flex;
   align-items: center;
   background-color: beige;
@@ -15,7 +19,7 @@ body {
   width: 100%;
 }
 
-.Cabezera a {
+.cabecera a {
   flex: 1;
   height: 100%;
   display: flex;
@@ -26,20 +30,51 @@ body {
   border: 2px solid white;
   border-radius: 5px;
 }
-.Cabezera a img{
+.cabecera a img{
 height: 30px;
 width: 30px;
 object-fit: cover;
 }
-.Titulo {
+.titulo {
   margin-top: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.Titulo img {
+.titulo img {
   height: 100px;
   width: 100px;
   object-fit: cover;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "sidebar principal";
+  gap: 16px;
+  padding: 0px;
+  margin: 10px;
+  flex: 1;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 10px;
+  background-color: violet;
+}
+
+.principal {
+  grid-area: principal;
+  padding: 10px;
+  background-color: violet;
+}
+
+#contenedor-actividades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 2rem;
 }
