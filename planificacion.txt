@@ -5,6 +5,7 @@ Restaurantes a los que ir
 Sitios a los que ir
 Fotos
 Calendario
+Aleatorio
 
  - Todos estos tienen una etiqueta/categoria, pueden tener más de una.
  - En la página inicial, aparece un título y también un buscador, debajo del buscador aparecen las “ideas principales” como las para ver todo lo que hay guardado para llegar más rápido a ello.
@@ -14,7 +15,7 @@ Calendario
  - Las fotos se giraran al darle click y mostrara información como el sitio el dia y una pequeña nota
  - Los planes ya hechos y que tengan una foto relacionada se podra enlazar para poder ir/ver hacia la foto
  - Se puede añadir significado a los colores como que rojo es dias q no se podra quedar, verde a los planes decididos y rosa a los dias que se esta planificando el plan.
-
+ - El aleatorio elige planes sencillos que se pueda hacer cuando no se nos ocurre que hacer, cuando toca se puede aceptar o no, cuando una actividad es aceptada su probabilidad de salir disminuye
 
 Actividades:
  - Materiales
