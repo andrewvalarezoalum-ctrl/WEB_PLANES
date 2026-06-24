@@ -29,11 +29,18 @@ body {
   box-sizing: border-box;
   border: 2px solid white;
   border-radius: 5px;
+  transition-duration: 0.5s;
+  transition-property: font-size;
 }
-.cabecera a img{
-height: 30px;
-width: 30px;
-object-fit: cover;
+.cabecera a:hover {
+  background-color: grey;
+  font-size: 25px;
+}
+
+.cabecera a img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
 }
 .titulo {
   margin-top: 250px;
@@ -52,8 +59,7 @@ object-fit: cover;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
-  grid-template-areas: 
-    "sidebar principal";
+  grid-template-areas: "sidebar principal";
   gap: 16px;
   padding: 0px;
   margin: 10px;
