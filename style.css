@@ -31,10 +31,14 @@ body {
   border-radius: 5px;
   transition-duration: 0.5s;
   transition-property: font-size;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+
 }
 .cabecera a:hover {
   background-color: grey;
-  font-size: 25px;
+  scale: 1.2;
 }
 
 .cabecera a img {
