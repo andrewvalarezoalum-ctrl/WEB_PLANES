@@ -1,1 +1,46 @@
-USUARIO (*nombreUsuario*, )
+USUARIO (*nombreUsuario*, contrasena)
+
+EVENTO_CALENDARIO (*idEventoCalendario*, fechaCalendario, tipoEventoCalendario, descripcionCalendario, colorHEX, significadoColor, nombreUsuario, idPlan)
+    DONDE nombreUsuario REFERENCIA USUARIO nombreUsuario
+    DONDE idPlan REFERENCIA PLAN idPlan
+
+ETIQUETA (*idEtiqueta*, nombreEtiqueta)
+
+FOTO (*idFoto*, fechaFoto, comentarioFoto, rutaArchivo, idPlan)
+    DONDE idPlan REFERENCIA PLAN idPlan
+
+PLAN (*idPlan*, tituloPlan, tipoPlan, descripcionPlan, estadoPlan, fechaPlan)
+
+ACTIVIDAD (*idActividad*, idPlan, tiempoEstimado)
+    DONDE idPlan REFERENCIA PLAN idPlan
+
+MATERIALES (*idMaterial*, nombreMaterial, precioMaterialUnidad)
+
+ALEATORIO (*idAleatorio*, idPlan, probabilidad, descripcionAleatorio, vecesAceptado, vecesRechazado)
+    DONDE idPlan REFERENCIA PLAN idPlan
+
+SITIO (*idSitio*, idPlan, tipoSitio, direccionSitio, distanciaSitioKM,descripcionSitio, linkMapsSitio)
+    DONDE idPlan REFERENCIA PLAN idPlan
+
+RESTAURANTE (*idRestaurante*, idPlan, nombreRestaurante, paisTipicoRestaurante, direccionRestaurante, linkMapsRestaurante, distanciaRestauranteKM, precioPP)
+    DONDE idPlan REFERENCIA PLAN idPlan
+
+RECETA (*idReceta*, idPlan, cantidadReceta, tiempoPreparacion, paisTipicoReceta)
+    DONDE idPlan REFERENCIA PLAN idPlan
+
+PASO_RECETA (*idPasoReceta*, *idReceta*, descripcionPasoReceta, orden)
+    DONDE idReceta REFERENCIA RECETA idReceta
+
+INGREDIENTE (*idIngrediente*, nombreIngrediente, precioIngredienteUnidad)
+
+ETIQUETA_PLAN (*idPlan*, *idEtiqueta*)
+    DONDE idPlan REFERENCIA PLAN idPlan
+    DONDE idEtiqueta REFERENCIA ETIQUETA idEtiqueta
+
+ACTIVIDAD_MATERIAL (*idActividad*, *idMaterial*, cantidadMaterial)
+    DONDE idActividad REFERENCIA ACTIVIDAD idActividad
+    DONDE idMaterial REFERENCIA MATERIALES idMaterial
+
+RECETA_INGREDIENTE (*idReceta*, *idIngrediente*, cantidadIngrediente)
+    DONDE idReceta REFERENCIA RECETA idReceta
+    DONDE idIngrediente REFERENCIA INGREDIENTE idIngrediente
