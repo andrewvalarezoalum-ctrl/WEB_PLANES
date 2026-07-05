@@ -71,28 +71,20 @@ body {
 
 }
 
-
-.contenido {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "sidebar principal";
-  gap: 16px;
-  padding: 0px;
-  margin: 10px;
-  flex: 1;
+.sidebarFiltroBoton {
+display: flex;
+height: 50px;
+width: 50px;
+border-radius: 50%;
 }
 
-.sidebar {
-  grid-area: sidebar;
-  padding: 10px;
-  background-color: violet;
+.menuFiltroOculto{
+  display: none;
 }
 
-.principal {
-  grid-area: principal;
-  padding: 10px;
-  background-color: violet;
+.menuFiltro{
+display: block;
+background-color: white;
 }
 
 #contenedor-actividades {
