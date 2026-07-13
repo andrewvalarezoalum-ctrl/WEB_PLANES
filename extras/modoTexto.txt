@@ -1,25 +1,28 @@
 USUARIO (*nombreUsuario*, contrasena)
 
-EVENTO_CALENDARIO (*idEventoCalendario*, fechaCalendario, tipoEventoCalendario, descripcionCalendario, colorHEX, significadoColor, nombreUsuario, idPlan)
+LISTA_DESEOS (*idDeseo*, nombreDeseo, precioDeseo, descripcionDeseo, enlaceDeseo, estadoDeseo, nombreUsuario)
+    DONDE nombreUsuario REFERENCIA USUARIO nombreUsuario
+
+EVENTO_CALENDARIO (*idEventoCalendario*, fechaCalendario, tipoEventoCalendario, descripcionCalendario, colorHEX, significadoColor, contribuidoresEvento, nombreUsuario, idPlan)
     DONDE nombreUsuario REFERENCIA USUARIO nombreUsuario
     DONDE idPlan REFERENCIA PLAN idPlan
 
-ETIQUETA (*idEtiqueta*, nombreEtiqueta)
+ETIQUETA (*idEtiqueta*, nombreEtiqueta, colorHEXEtiqueta)
 
 FOTO (*idFoto*, fechaFoto, comentarioFoto, rutaArchivo, idPlan)
     DONDE idPlan REFERENCIA PLAN idPlan
 
-PLAN (*idPlan*, tituloPlan, tipoPlan, descripcionPlan, estadoPlan, fechaPlan)
+PLAN (*idPlan*, tituloPlan, tipoPlan, descripcionPlan, estadoPlan)
 
 ACTIVIDAD (*idActividad*, idPlan, tiempoEstimado)
     DONDE idPlan REFERENCIA PLAN idPlan
 
 MATERIALES (*idMaterial*, nombreMaterial, precioMaterialUnidad)
 
-ALEATORIO (*idAleatorio*, idPlan, probabilidad, descripcionAleatorio, vecesAceptado, vecesRechazado)
+ALEATORIO (*idAleatorio*, idPlan, probabilidad, descripcionAleatorio, vecesAceptado, vecesRechazado, categoria)
     DONDE idPlan REFERENCIA PLAN idPlan
 
-SITIO (*idSitio*, idPlan, tipoSitio, direccionSitio, distanciaSitioKM,descripcionSitio, linkMapsSitio)
+SITIO (*idSitio*, idPlan, tipoSitio, direccionSitio, distanciaSitioKM, descripcionSitio, linkMapsSitio)
     DONDE idPlan REFERENCIA PLAN idPlan
 
 RESTAURANTE (*idRestaurante*, idPlan, nombreRestaurante, paisTipicoRestaurante, direccionRestaurante, linkMapsRestaurante, distanciaRestauranteKM, precioPP)
