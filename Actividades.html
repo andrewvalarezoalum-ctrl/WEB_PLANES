@@ -1,33 +1,42 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Actividades</title>
-    </head>
-    <body>
-        <img class="video-fondo" src=".\img\5c43d280ddfbd4a1b4c571874e699f8d.gif" alt="fondo">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividades</title>
+  </head>
+  <body>
+    <img
+      class="video-fondo"
+      src=".\img\5c43d280ddfbd4a1b4c571874e699f8d.gif"
+      alt="fondo"
+    />
 
-        <header class="cabecera">
-            <a href="Principal.html"><img src=".\img\3.svg" alt="imagen"/></a>
-            <a href="Actividades.html">Actividades</a>
-            <a href="Sitios.html">Sitios</a>
-            <a href="Restaurantes.html">Restaurantes</a>
-            <a href="Recetas.html">Recetas</a>
-            <a href="Aleatorio.html">Aleatorio</a>
-            <a href="Fotos.html">Fotos</a>
-            <a href="Calendario.html">Calendario</a>
-        </header>
-        <main class="contenido">
-            <aside class="sidebar">
-				<p>Filtros</p>
-            </aside>
-			<section class="principal">
-				<p>planes</p>
-				<div id="contenedor-actividades"></div>
-			</section>
-        </main>
-		<script src="app.js"></script>
-    </body>
+    <header class="cabecera">
+      <a href="Principal.html"><img src=".\img\3.svg" alt="imagen" /></a>
+      <a href="Actividades.html">Actividades</a>
+      <a href="Sitios.html">Sitios</a>
+      <a href="Restaurantes.html">Restaurantes</a>
+      <a href="Recetas.html">Recetas</a>
+      <a href="Aleatorio.html">Aleatorio</a>
+      <a href="Fotos.html">Fotos</a>
+      <a href="Calendario.html">Calendario</a>
+    </header>
+    <main class="contenido">
+      <button id="filtroBoton" class="sidebarFiltroBoton">
+        <img src=".\img\filtroIcon.svg" alt="" />
+      </button>
+      <div id="menuFiltro" class="menuFiltroOculto">
+        <label for=""><input type="checkbox" />Filtro 1</label><br>
+        <label for=""><input type="checkbox" />Filtro 2</label><br>
+        <label for=""><input type="checkbox" />Filtro 3</label>
+      </div>
+      <section class="principal">
+        <p>planes</p>
+        <div id="contenedor-actividades"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
