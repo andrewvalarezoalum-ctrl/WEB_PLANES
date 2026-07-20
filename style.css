@@ -83,7 +83,10 @@ border-radius: 50%;
 }
 
 .menuFiltro{
-display: block;
+display: flex;
+flex-direction: column;
+height: 150px;
+width: 150px;
 background-color: white;
 }
 
